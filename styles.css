@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0.5rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .counter-div {
+  width: 40rem;
+  border: 1px solid grey;
+  padding: 1rem;
+  background-color: #23549e;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.container .counter-div > * {
+  margin-bottom: 2rem;
+}
+
+.container .counter-div .count {
+  font-size: 4rem;
+}
+
+.container .counter-div .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .counter-div .buttons button {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container .counter-div .buttons button.subtract {
+  background-color: orangered;
+}
+
+.container .counter-div .buttons button.reset {
+  background-color: white;
+  color: black;
+}
+
+.container .counter-div .buttons button.add {
+  background-color: green;
+}
+
+@media screen and (min-width: 500px) {
+  .container .counter-div .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .counter-div .buttons button {
+    margin: 0 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
